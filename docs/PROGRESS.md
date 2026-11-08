@@ -71,6 +71,13 @@ Conclusions:
   `C:\Users\jpsen\AppData\Local\Temp\claude\6d40a5309ca0a603\9cf0188a-c1aa-408e-ac0d-d6c213a20211\scratchpad\run4\slot1.png`
   and `...\scratchpad\sheet4.png`.
 
+## Phase 2: crossbow arrow tip (in progress)
+
+### 2.1: upstream proposal drafted (2026-11-08)
+
+`docs/UPSTREAM_PROPOSAL.md`: suggestion for Horizon (client asset overrides in `side = "client"` content mods), with
+the Phase 1b evidence. Not posted: waiting for the owner to post it or to authorise posting.
+
 ## Gates (last run 2026-11-08)
 
 | Gate | Result |

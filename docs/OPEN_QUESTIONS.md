@@ -7,7 +7,7 @@
    Recommendation: 2a as a proposal + defer the rest until 2b lands.
 2. **If the wasm runtime returns with its own file format, does that count as ".hmod sandboxed" for you?**
    The rule's intent (sandboxed, no custom game build) would be met; the extension may differ.
-3. **Phase 1b experiment**: may I build a throwaway local resource pack in a scratch folder (never published or
+3. ~~**Phase 1b experiment**~~ done after your "continue" (PROGRESS.md 1b). Was: may I build a throwaway local resource pack in a scratch folder (never published or
    committed) to test the crossbow data in Horizon? It is a test tool, not the deliverable.
 4. **Running Horizon**: will you provide a runnable Horizon client (a release, or prepared resources from your own
    Minecraft 26.3 copy)? Needed for any in-game proof.
@@ -31,9 +31,10 @@
 
 ## Technical, to verify by experiment
 
-13. Does `select` with `property: minecraft:component`, `component: minecraft:charged_projectiles` match an exact
-    list value in Horizon (`item_model.rs:1452` returns the raw value; how is it compared, and how are counts and
-    nested components spelled)? Decides whether spectral vs plain is data-solvable.
+13. ~~Does `select component minecraft:charged_projectiles` match an exact list value in Horizon?~~ **Answered
+    2026-11-08 (PROGRESS.md 1b): yes.** `when` must be a list of alternatives whose items are the stored lists, e.g.
+    `[[{"id":"minecraft:spectral_arrow"}]]`; count 1 is omitted in the stored value. Horizon compares raw JSON
+    (`item_model.rs:1277`); whether vanilla would also match a `when` spelled with `"count": 1` is not checked.
 14. Does Horizon's GUI font and the launcher render U+00B4 in the mod name?
 15. Does Horizon's crossbow in first/third person use the same item-model path with `charged_projectiles` set on
     remote players' items (multiplayer)? [ASSUMED yes, unverified]

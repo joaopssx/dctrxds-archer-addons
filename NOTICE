@@ -1,0 +1,23 @@
+DctrXD´s Archer Addons
+Copyright (c) 2026 João Pedro (DctrXD). MIT, see LICENSE.
+
+An unofficial reimplementation, for Horizon, of the behaviour of two Minecraft mods written in Java.
+No Java code, texture, model or text of either original is included in this repository at this version.
+No code, asset or text of Mojang or Microsoft is included.
+
+1. Arrow Trails
+   Copyright (c) 2025 Biverom. MIT License: LICENSES/arrowtrails-MIT.txt
+   Source: https://github.com/Biverom/arrowtrails, commit d94f3866bbf33241e57e1166f7bd5351dbded68f
+   Derived here: behaviour descriptions and default values documented in docs/ANALYSIS.md
+   (trail lengths, colours, alphas, widths, kind precedence, ribbon algorithm). Nothing implemented yet.
+
+2. Real Arrow Tip
+   MIT License, as published: LICENSES/real-arrow-tip-MIT.txt
+   (its copyright line reads "Copyright (c) 2023 " with no holder name; the project is by ToBinio,
+   source headers name Tobias Frischmann).
+   Source: https://tangled.org/tobinio.dev/real-arrow-tip, commit e2033a0d81e91a218bb0fce13f2aefc45abe3f6b
+   Derived here: behaviour descriptions documented in docs/ANALYSIS.md (which model each projectile
+   selects, multishot rule, default tint 0xFF385DC6). Nothing implemented yet.
+   Its textures are NOT used: they appear to contain Mojang artwork (docs/RISKS.md).
+
+Each later file derived from either original will be listed here with its origin.

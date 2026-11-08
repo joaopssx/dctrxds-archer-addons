@@ -1,0 +1,11 @@
+[package]
+name = "content-check"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+publish = false
+description = "Dev tool: checks the .hmod content in ../../mod against this project's own rules."
+
+[dependencies]
+serde_json = "1"
+toml = "1.1.6"

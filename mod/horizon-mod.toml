@@ -1,0 +1,11 @@
+id = "dctrxds_archer_addons"
+name = "DctrXD´s Archer Addons"
+version = "0.1.0"
+description = "Unofficial combination based on Arrow Trails (Biverom) and Real Arrow Tip (ToBinio). Phase 1 skeleton: no gameplay or visual change yet."
+authors = ["DctrXD"]
+# A content mod: data and assets only, no code (API 0.2, horizon docs/mods.md).
+api = "0.2"
+# Client-only visuals: never compared with a server's mod list.
+side = "client"
+# Required by `cargo horizon-mod build` for every content mod; this mod declares no blocks or items.
+capabilities = ["registries"]
